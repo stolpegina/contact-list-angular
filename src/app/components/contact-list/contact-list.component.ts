@@ -8,15 +8,12 @@ import { ContactModel } from '../../models/contact.model';
 })
 export class ContactListComponent {
 
-  public contacts: ContactModel[]= [
-    {
-      name: 'Иванов Иван',
-      phone: '123456789'
-    },
-    {
-      name: 'Петров Алексей',
-      phone: '4656454654'
-    }
+  contacts: ContactModel[] = [
+    new ContactModel('Иванов Иван', '123456789'),
+    new ContactModel('Петров Алексей', '4656454654')
   ];
 
+  addContact(contact: ContactModel): void {
+    this.contacts.push(contact);
+  }
 }
