@@ -1,16 +1,25 @@
 :host {
-    display: flex;
-    align-items: center;
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    &:not(:last-child) {
+    .contact {
+        display: flex;
+        align-items: center;
+        background-color: aliceblue;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 20px;
         margin-bottom: 20px;
     }
     .name {
         font-weight: bold;
         font-size: 20px;
         margin-right: 10px;
+    }
+    .remove {
+        margin-left: auto;
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
     }
 }
